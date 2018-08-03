@@ -7,12 +7,14 @@
 <title>Welcome</title>
 </head>
 <body>
-	<form action="/add" method="get">
+	<form action="/calculate" method="get">
 		Number 1:<br>
 		<input type="text" name="a"/><br>
 		Number 2:<br>
 		<input type="text" name="b"/><br>
-		<input type="submit" name="Submit"/>
+		<input type="submit" name="Submit" value="Add"/>
+		<input type="submit" name="Submit" value="Subtract"/>
+		<input type="submit" name="Submit" value="Multiply"/>
 	</form>
 </body>
 </html>

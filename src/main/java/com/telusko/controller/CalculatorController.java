@@ -20,9 +20,14 @@ public class CalculatorController {
 		return "home.jsp";
 	}
 
-	@RequestMapping(value="/add")
+	@RequestMapping(value="/calculate")
 	@ResponseBody
-	public int addition(@RequestParam("a") int a,@RequestParam("b") int b) {
-		return calculatorService.addition(a, b);
+	public int addition(@RequestParam("Submit") String operand,@RequestParam("a") int a,@RequestParam("b") int b) {
+		if(operand.equals("Add")) {
+			return calculatorService.addition(a, b);
+		}else if(operand.equals("Subtract")) {
+			return calculatorService.subtraction(a, b);
+		}
+		return calculatorService.multiplication(a, b);
 	}
 }

@@ -7,6 +7,6 @@
 <title>Result</title>
 </head>
 <body>
-	Result of your calculation ${a} ${operand} ${b} = ${result}
+	Result of your calculation ${obj.num1} ${obj.operand} ${obj.num2} = ${obj.result}
 </body>
 </html>

@@ -9,12 +9,12 @@
 <body>
 	<form action="/calculate" method="get">
 		Number 1:<br>
-		<input type="text" name="a"/><br>
+		<input type="text" name="num1"/><br>
 		Number 2:<br>
-		<input type="text" name="b"/><br>
-		<input type="submit" name="Submit" value="Add"/>
-		<input type="submit" name="Submit" value="Subtract"/>
-		<input type="submit" name="Submit" value="Multiply"/>
+		<input type="text" name="num2"/><br>
+		<input type="submit" name="operand" value="Add"/>
+		<input type="submit" name="operand" value="Subtract"/>
+		<input type="submit" name="operand" value="Multiply"/>
 	</form>
 </body>
 </html>
